@@ -1,0 +1,12 @@
+   1. Basic Types: Used for defining variables, function parameters, and return types in Angular components, services, etc.
+
+   2. Interfaces: Define the shape of data models, API responses, and configuration objects.
+
+   3. Classes: Used to create Angular components, services, directives, and pipes.
+
+   4. Decorators: Angular uses decorators like @Component, @Injectable, @Input, and @Output to define metadata for classes.
+
+   5. Modules: Angular uses @NgModule to organize the application into feature modules.
+
+   -------------------------------------------------------------------------------------------------------------------------------
+   

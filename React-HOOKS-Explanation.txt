@@ -1,0 +1,19 @@
+useState => its like a state that we create for keep state for changing and with  every change we do somthing
+
+
+useReducer =>
+
+
+useEffect => this hook runs with every inithial re-render or render and we can customize it for run in onother situations with dependenci array
+
+useLayoutEffect =>
+
+useContext =>
+
+useMemo =>
+
+useCallback =>
+
+useRef =>
+
+useImperativeHandle =>

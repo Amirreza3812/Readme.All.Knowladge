@@ -1,0 +1,391 @@
+<script   type="text/javascript"  src="main.js"></script>
+
+windows.alert("متني که ميخوايم آلرت شه");
+
+document.write("متني که ميخوايم چاپ شه"); we can use that in the events
+
+<p id=""></p>
+document.getElementById("اسم آيدي که برا المنت گداشتيم").innerHTML = "سلام عزيزان بازديد کننده";
+با اين اول المنت رو صدا ميکنيم(از طريق آيدي) بعدش اون رو داخل خود اچ تي ام ال ازش استفاده ميکنيم
+
+console.log("لاگي که فقط داخل کنسول نمايش ميده");
+
+values in javascript =ثابت ها و متغير ها
+
+var x; متغير 
+
+                                                                                 :قوانين نام گذاري ور ها در جاوااسکريپتپ
+
+از اعداد نبايد استفاده شود & جاوا اسکريپت کيس سنستيو هستش يعني بزرگ و کوچک بودن حروف براش مهمه
+
+var = 144e5; يعني عدد صدو چهار و پنج تا صفر منفي بزاريم جلوي اي مميز دار ميشه عدد
+
+var x = [] آرايه ايز ديس
+نکته :  آرايه رو اگه ازش تايپ آف بگيريم بازم آبجکت خروجي ميده براي اين که بتونيم بفهميم که آرايس واقعا يا آبجکته از اين پروپرتي استفاده ميکنيم
+var x =Array.isArray(اسم اون متغير);
+آبجکت چيزيه که ميشه بهش پروپرتي يعني خصوصيت نسبت داد و يه ديتا تايپ داريم که آبجکته و اينجوري تعريف ميشه 
+var persion ={firstname:mamad, name:value, ....};
+
+typeof = با نوشتن اسم يک متغير داخل اين ميتونه نوعش رو بگه که آيا آبجکته يا آرايس يا نامبره يا بولين هستش
+
+var = null; اين يعني کلا ديگه هيچي توش نيست يعني حتي تايپ هم نداره ولي جي اس اونو به عنوان آبجکت در نظر ميگيره
+
+return اين کلمه نتيجه رو ميفرسته به اسم تابع يعني يه جورايي اسم تابع ميتونه يه متغير باشه
+---------------------------------------------------------------------------------------------------------------Events
+onklick="زماني که کاربر بر روي آن چيز کليک کند";
+<button onclick=" this.innerHTML='سلام'  "> test </button>  زماني که از ديس در کنار اينر اچ تي ام ال استفاده کنيم نميره به المنت ديگه توي همون المنت چاپ ميکنه
+
+چيزهاي مربوط به ايونت هارا بررسي خواهم کرد dom bom
+---------------------------------------------------------------------------------------------------------------spacial characters
+like skip character 
+ string = "it\'s test mark"  اگر قبل از يک کاراکتر يک بک اسلش بزاريم کامپايلر اسکيپش ميکنه و اجراش نميکنه و فقط به عنوان به استرينگ ميشناستش
+$$$$$serch about it
+---------------------------------------------------------------------------------------------------------------
+var y = new String("test"); در اين صورت استرينگ ما به صورت آبجکت شناخته ميشود
+ميتوان نوع متغير را تايين کرد new با دستور 
+
+var x = اسم متغيره ديگه length  : تعداد کاراکتر هاي داخل اون متغير رو ميده
+
+var x = اسم متغيره ديگه.indexof("کلمه") =< var x = اسم متغيره ديگه.serch("کلمه") 
+اين اولين شماره کرکتري که اين کلمه ازش توي اون متغير شروع شده روش نشون ميدهه
+
+var x = اسم متغيره ديگه.lastIndexof("کلمه") 
+از اسمش معلومه چه گوهي ميخوره
+
+var x = اسم متغيره ديگه.slice(15,30); از جايي که زديم تا جايي که زديم ميبره جدا ميکنه مياره
+
+var x = اسم متغيره ديگه.substr(7,8); اولي ميشه نقطه شروع دومي ميشه تعداد کرکتر که بره جلو و اسلايس کنه بياره   
+
+var x = name of another var.replace("متني که جايگزينش ميکنه","کلمه داخل متن"); 
+
+var x = y.toUppercase(); حروف رو بزرگ مينويسه
+var x = y.toLowercase(); حروف رو کوچک مينويسه
+
+var x = y.charAt(5); صرفا يک کرکتر رو جدا ميکنه مياره
+
+var x = y.toString(); تبديل کردن به استرينگ
+اين ميتونه تبديل مبنا هم بکنه کافيه مبنايي که ميخوايم رو داخل پارانتزش بنويسيم
+var x = y.toString(16);
+
+var x = y.toFixed(); تبديل ميکنه به استرينگ و داخل پرانتز هر عددي بنويسيم به اندازه همون عدد اعشار نشون ميده
+---------------------------------------------------------------------------------------------------------------
+Math.PI = عدد پي
+Math.round() عدد رو گرد ميکنه
+Math.pow() دوتا ورودي ميگيره يکي خود عدد و ديگري توانش
+Math.squrt() ورودي ميگيره و راديکال ميگيره
+Math.abs() اعداد منفي رو تبديل ميکنه به اعداد مثبت 
+Math.ceil() فقط رو به بالا گرد ميکنه
+Math.floor() برعکس حالت بالايي
+Math.min() چند تا عدد ميگيره و کوچيک ترين رو بر ميگردونه
+Math.max() برعکس حالت بالايي
+Math.random() عددي بين 0 تا 1 ميده
+--------------------------------------------------------------------------------------------------------------- تاريخ بايد از منبع ديگري خوانده شود
+Date("تاريخ مورد نظر رو بزنيم اونو نمايش ميده"); 
+---------------------------------------------------------------------------------------------------------------
+var x = pox.join(" / "); جدا کننده ي متن رو مشخص ميکنه يعني ميتونيم به جاي کاما چيز ديگري قرار بديم
+
+var  x = car.pop(); آخرين آيتم توي آرايه حذف ميشه, بهتره بگيم از آرايه ميارتش بيرون يعني اگه ازش خروجي بگيريم آخرين آرايه رو نشون ميده
+ 
+var  x = car.push("چيزي که ميخوايم اضافه شه بهش"); 
+
+var  x = car.shift(); از سمت راست و از اولين آيتم شروع ميکنه شيفت ميده و ميندازه از آرايه بيرون عملکردي شبيه پاپ داره
+
+var  x = car.unshift(); از سمت چپ چيزي که بنويسيم رو اضافه ميکنه تو
+
+
+var  x = car.splice(شماره ي اون المنت داخله آرايه); 
+بعد از نوشتن شماره آرايه کاما اسپيس ميزنيم و بعدش يه عدد ميديم بهش که چند تا بعد از اون المنت رو حدف کنه يا نکنه
+بعدش هر چند تا بخوايم کاما اسپيس ميزنيم و چيزايي که ميخوايم به اون قسمت اضافه بشه رو مينويسيم
+  
+
+var  x = car.slice(); تا اون قسمتي که وارد کني اسلايس ميکنه برميداره
+اگر دو عددي بزني هم که معلومه
+
+ميخواي دو آرايه رو به هم بچسبوني ولي نميتوني؟ چاره کار اينجاست  
+ var  x = car.concat(اسم آرايه ديگه);
+---------------------------------------------------------------------------------------------------------------
+var  x = car.sort(); ميتونيم باهاش مرتب سازي کنيم آرايه رو و اگر هيچي بهش نديم به صورت پيش فرض با حروف الفباي انگليسي کار ميکنه و به صورت نزولي کار ميکنه
+
+var  x = car.reverse(); همون کارو ميکنه ولي به صورت صعودي
+
+اگه بخوايم که آيتم هارو مقايسه کنه و سپس مرتب کنه بايد اين کارو بکنيم
+var  x = car.sort( function (a,b) (return a-b) ); اين از بزرگ به کوچک مرتب ميکنه
+var  x = car.sort( function (a,b) (return b-a) ); اين از کوچک به بزرگ مرتب ميکنه
+---------------------------------------------------------------------------------------------------------------
+x === "10";  در حالتي که سه مساوي بزاريم هم ارزش هارو مقايسه ميکنه هم نوع ديتا تايپ هارو
+
+&&   عملگر منطقي اند  اينجوريه
+||    عملگر منطقي اور اينجوريه
+(شرط)   ?  "if tru print this":"if false print this";
+
+if (condituin) {
+ block code true
+}
+else {
+
+};
+
+
+
+if (condituin) {
+ block code true
+}
+
+else if {
+
+}
+
+else{
+
+};
+ ميريم داخل ايف بعدش ميريم داخل الس که داخل الس يه ايفه ديگس دوباره ميره داخل اون و دوباره ميتونه بره داخل السه ايف دومي
+
+---------------------------------------------------------------------------------------------------------------
+swich(inout parametr) [
+     case n :
+             code block
+             break;
+     case n+1:
+....
+
+deufalt;
+
+
+]
+---------------------------------------------------------------------------------------------------------------
+for (statement1=variable ; statement2=condition ; statement3=variable){
+  code block
+}
+
+for in  کار اين حلقه خروجي گرفتن پروپرتي هاي يک آبجکت است
+for(a in object name){
+
+}
+
+while (condittion){
+
+}
+
+در حلقه ي دو وايل کدي که داخل دو هست يه بار اجرا ميشه بعدش ميره داخل وايل و باقي قضيه
+
+do {
+ code block
+}
+while {
+  
+}
+
+break : اومدن بيرون از حلقه
+contino : رد کردن يک بار حلقه
+
+---------------------------------------------------------------------------JSON
+براي تبادل اطلاعات بين بک اند و فرانتي که با جاوااسکريپت نوشته شده استفاده ميشه.
+const data = JSON.stringify(آبجکت ميدي بهش تبديلش ميکنه به استرينگ ميفرسته)پ
+
+از اين حالت براي دريافت اطلاعات از سرور استفاده ميشه
+JSON.parse(استرينگ ميگيره و به جاش آبجکت برميگردونه)
+
+
+
+-----------------------------------------------------------------------
+The && operator (logical AND) returns the first operand if it is "falsy", or the second operend if the first operend is "truthy".
+
+The || operator (logical OR) returns the first operend if it is "truthy", or the second operand if the first operand is "falsy".
+
+
+--------------------------------------------------------------------------------------
+
+when we need to get boolean value from input we can get it from chaekced={} attribute insted of value={}
+
+
+useReducer(Gets ths function, Deufalt State)
+
+
+---------------------------------------------------------------useReducer Hook
+
+its a like a light version of the redux 
+
+
+-------------------------------------------------------------------- #React.memo()
+
+React.memo is a higher-order component (HOC) in React that allows you to memoize a component. This means that if the input props to the component have not changed, the memoized component will return the same result from the previous render, instead of re-rendering. This can help improve performance by avoiding unnecessary render cycles.
+
+The React.memo function takes a functional component as its argument and returns a new component that has the same behavior, but with the added optimization of checking if the props have changed. If the props have not changed, the memoized component will return the cached result from the previous render.
+
+Here's an example of using React.memo
+
+```js
+const MyComponent = React.memo(function MyComponent(props) {
+  /* render logic */
+});
+```
+
+React.memo(Component) - returns memoized component
+
+------------------------------------------------------------------------------------- # UseCallback
+The useCallback hook is a hook in React that allows you to memoize a function. It takes two arguments: the first is the function you want to memoize, and the second is an array of dependencies. The hook will return a memoized version of the function that only changes if one of the values in the dependency array changes.
+
+By memoizing the function, you can avoid unnecessary re-renders and improve the performance of your React application. The function will only be re-created if one of its dependencies changes, otherwise the same instance of the function will be returned. This can be useful in situations where you have an expensive function that you only want to recompute when its dependencies change.
+
+Here is an example of how you might use useCallback:
+
+```js
+import React, { useCallback, useState } from 'react';
+
+function MyComponent() {
+  const [data, setData] = useState([]);
+  const handleClick = useCallback(() => {
+    console.log(data);
+  }, [data]);
+
+  return (
+    <div>
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  );
+}
+```
+
+In this example, the handleClick function is memoized using useCallback and the data prop is passed as a dependency. This means that the handleClick function will only be re-created if the data prop changes.
+
+
+---------------------------------------------------------------------------------#### useMemo
+
+The useMemo hook is a hook in React that allows you to memoize a value. It takes two arguments: the first is a function that returns the value you want to memoize, and the second is an array of dependencies. The hook will return the memoized value that will only change if one of the values in the dependency array changes.
+
+By memoizing a value, you can avoid unnecessary calculations and improve the performance of your React application. The value will only be recalculated if one of its dependencies changes, otherwise the same instance of the value will be returned. This can be useful in situations where you have an expensive calculation that you only want to recompute when its dependencies change.
+
+Here is an example of how you might use useMemo:
+
+```js
+import React, { useMemo } from 'react';
+
+function MyComponent({ data }) {
+  const processedData = useMemo(() => {
+    return data.map((item) => item.toUpperCase());
+  }, [data]);
+
+  return (
+    <div>
+      {processedData.map((item) => (
+        <div key={item}>{item}</div>
+      ))}
+    </div>
+  );
+}
+```
+
+In this example, the processedData value is memoized using useMemo and the data prop is passed as a dependency. This means that the processedData value will only be recalculated if the data prop changes.
+
+
+----------------------------------------------------------------------------------#### useTransition
+
+
+- useTransition is a React Hook that lets you update the state without blocking the UI.
+
+
+-------------------------------------------------------------------------------#### Suspense API
+The Suspense API is a feature in React that allows you to manage the loading state of your components. It provides a way to "suspend" rendering of a component until some data has been fetched, and display a fallback UI in the meantime. This makes it easier to handle asynchronous data loading and provide a smooth user experience in your React application.
+
+Here is an example of how you might use the Suspense API:
+
+```js
+import React, { lazy, Suspense } from 'react';
+
+const DataComponent = lazy(() => import('./DataComponent'));
+
+function MyComponent() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DataComponent />
+    </Suspense>
+  );
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

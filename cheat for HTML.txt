@@ -1,0 +1,162 @@
+<blockquote> جاستيفاي ميکنه متنو </blockquote>
+<abbr title=""> يه متني</abbr>
+<adrdress>يکم فونتش فرق ميکنه</adrdress>
+<img src="...." alt="" style="">  
+<cite> تايتل کار رو مشخص ميکنه 
+<kbd>هر چيزي تايپ کني نمايش ميده
+<samp>حالت کامپيوتري انگار کد خروجي چاپ ميکنه
+<code> کد رو حالت برنامه نويسي چاپ ميکنه
+---------------------------------------------------------------------------------------------------------------
+rgb(red, green, blue) هر کدام از اين رنگ ها ميتونن بين 0 تا 255 باشند
+
+#RRGGBB
+از 00 تا ff ميتونن تغيير کنن
+------------------------------------------------------------------------------------------------------
+<a href="url"> link content </a>
+
+link = وقتي که کاربر کلا نديده
+visited = وقتي که کاربر بازديد کرده يه بار
+hover = وقتي که روش هاور کني موسو
+active = وقتي که روش کليک کني   
+
+target :
+
+_blank  در يک صفحه جديد باز ميکنه 
+_self در همان صفحه باز ميکنه
+<a href"..." target="">
+name  رو هم احضار کنه با اتربيوته iframe ميتونه 
+------------------------------------------------------------------------------------------------------
+float المنت شناور ميشه و به مانيتور ميچسبه و المنت هاي ديگه نميتونن از مانيتو جداش کنن
+
+--------------------------------------------------------------------------------------------------------tabeles
+
+<table>
+<caption> table name </caption> 
+ <tr>رديف
+ <th colspan="تعداد سطون زير يه سطون" rowspan="تعداد رديف جلوي يه رديف">...</th>==>table heading= سر تيتر هاي جدول سطون ها
+  </tr>
+<tr>
+<td> محتويات داخل رديف </td>
+</tr>
+</table>
+----------------------------------------------------------------------------------------------------------lists
+
+Unordered lists
+
+<ul style="list_style_type:...."> ==> disc / circle / square /none
+    <li> محتاوا</li>
+    <li>...</li>
+</ul>
+
+Ordered list
+
+<ol type="">  ==> numbers= 1 / Uppercase = A / lowercase =a / Uppercase roman = I /lowercase roman = i
+    <li>...</li>
+    <li>...</li>
+</ol>
+ 
+Discription list ...
+
+<dl>
+   <dt>محتوا</dt> 
+   <dd>زير مجموعه محتوا</dd>
+
+   <dt></dt>
+   <dd></dd>
+</dl>
+
+---------------------------------------------------------------------------------------------------------------
+ block تا جايي که عرض مانيتور ما موجوده عريض ميشه و عرض رو پر ميکنه المنت بعدي زيرش قرار ميگيره و کنارش نميزاره قرار بگيره
+ inlini عرض رو پر نميکنه و المنت ميتونه پيشش قرار بگيره
+<span> ==> مثل پاراگرافه ولي خاصيت inline داره.
+<iframe src=""></iframe>  ميتوان يک سايت ديگر را در سايت خود باز کنيم
+--------------------------------------------------------------------------------------------------------------- meta detes 
+<meta  charset="UTF-8">براي زبان فارسي
+<meta  name="discription" content="توضيحات مطالب صفحه">
+<meta  name="keyword" content="کلمات کليدي که با کاما از هم جدا ميشن">
+<meta  name="author"  content="نويسنده سايت مثلا وقتي يه ولاگ نوشتيم">
+<base  href=""  target="">
+---------------------------------------------------------------------------------------------------------------Entities...
+&entity_name;
+or
+&#entity_number;
+
+space ==> &nbsp;   ==> none breaking spase
+
+&#8209; ==>  -
+
+&copy; کاراکتر کپي رايت
+------------------------------------------------Symmol Entities...
+Exampel ==> &euro; &reg; &trade;
+     Mathematical
+     Greek Letters
+     Other Symbols
+---------------------------------------------------------------------------------------------------------------XHTML
+
+---------------------------------------------------------------------------------------------------------------Forms
+<form action="آدرس ارسال براي اطلاعات فرم"  method="GET-->اطلاعاتي که مهم نيستند POST -> براي اطلاعات مهم " accept-charset="UTF-8" 
+autocomplete="on/of""  novalidate="novalidate">
+<fildset> يه بردر اطراف فرم درست ميکنه
+       <legend> اسم براي فرم ميتوني بزاري </legend>
+
+   <input type="text" => هستشtext اين چند ساختار داره يکيش>   
+" اينپوت ها inline هستند"
+
+  <input type="radio" value="...">   حالت نمايشي يعني چيزي که کنارش نوشته شه بيرون تگ مينويسيم   داراي چک باکس  
+
+  <input  type=""submit" value="send"> اين اينپوت اطلاعات رو جمع آوري ميکنه و ميفرسته به آدرس تايين شده
+
+</fildset>
+</form>
+ ---------------------------------------form elements
+<select name=""> ميتونيم با اين المنت منوي آبشاري درست کنيم
+  <option value="red">red</option> آپشن استايلش رو از سلکت به ارث ميبره
+  <option value="black"   selected="selected"-->ديفالت اينو مياره>black</option>
+</select>
+
+
+<textarea name="msg" rows="10" cols="10">اينجا ميتونيم متن پيشفرض بزاريم</textarea>   محدوده متني درست ميشه انگار که يه ورق کاغد گذاشتي وسط
+
+
+
+<button  type="button/submit/reset"> OK </button>
+------------------------------------------------------------------------------------------ورودي فرمها
+<input type="password" name="pass">
+<input type="checkbox" name=".." value="اسم"> ... 
+<input type="checkbox" name=".." value="اسم2"> ---     
+اگر دوتا اينپوت با يک نام باشند سيستم خودش ميفهمه که فقط يکيش بايد انتخاب شه
+
+<input type="number" value="num" min="0 or 1 or 10 or..." max="number"> فقط عدد قبول ميکنه
+<input type="date" name="date" max="2016-12-30">
+<input type="color" dint have value>
+<input type="range" min="" max="" name="rng">
+<output name="resulte" for="rng'></output> 
+---------------------------------------------------------------------اتربيوت هاي اينپوت ها
+<input type="text" name="use" value="علي(default)"  readonly="readonly"(غير قابل پاک شدن ميشه) 
+disabled="disabled"(کلا ديگه نميتوني تايپ کني توش)  siza=""50>
+
+<input type="text" name="dr" maxlength="حداکثر تعداد کاراکتر که ميتونه وارد شه" autofocus="autofocus"(به محض لود شدن صفحه موس خودکار ميره داخل اين)>
+<input type="submit" name="send-newaction" value="ارسال به جاي ديگري" formaction="آدرس جاي جديد که بايد ارسال شه" formmethod=""POST>
+<input type="submit" name="send-nova" value="ارسال بدون اعتبار سنجي" novalidate="novalidate">
+<input type="submit" name="send-target" value="ارسال به صفحه ديگري"  formtarget="_blank">
+
+<input list="formlist">
+   <datalist  id="formlist">
+            <option value="پيشنهاد 1">
+            <option value="پيشنهاد 2">
+            <option value="پيشنهاد 3">
+</datalisrt>
+   
+ <input type="file" name="proimg" multiple> اين امکان رو ميده که شخص بتونه از سيستم خودش چيزي رو آپلود کنه
+
+<input  type="text" name="..."  pattern="[]{}" title="چيزي که نيازه مخاطب درباره الگو بدونه رو چاپ ميکنه">  abute this(pattern) I whill research.@@$$
+
+<input type=""text" step"number"(ميتوان با اين دگمه درست کرد براي بيشتر و کمتر کردن عدد)>
+
+<input  type="text" placeholder="چيزي را که مينويسيم داخل باکس کم رنگ نشوم ميده"  requierd="required"(must fill) > 
+
+<sup>
+
+
+
+whats  <label for=""></label>  in forms?
